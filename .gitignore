@@ -2,6 +2,7 @@
 
 # IDEs
 .idea
+.idea/*
 .vscode
 
 # dependencies
@@ -42,6 +43,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 node_modules
+db
 
 .yarn/*
 !.yarn/releases
