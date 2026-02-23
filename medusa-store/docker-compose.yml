@@ -5,13 +5,14 @@ services:
     container_name: medusa_postgres
     restart: unless-stopped
     environment:
-      POSTGRES_DB: medusa-store
+      POSTGRES_DB: postgres
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d
     networks:
       - medusa_network
 
