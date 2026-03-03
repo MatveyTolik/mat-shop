@@ -1,4 +1,4 @@
-import { loadEnv, defineConfig } from '@medusajs/framework/utils'
+import {loadEnv, defineConfig} from '@medusajs/framework/utils'
 
 loadEnv(process.env.NODE_ENV || 'development', process.cwd())
 
@@ -65,5 +65,31 @@ module.exports = defineConfig({
     },
     // Add other plugins here if needed
   ],
-
+  modules: [
+    {
+      resolve: "./modules/strapi",
+      options: {
+        apiUrl: process.env.STRAPI_API_URL || "http://172.17.0.1:1337/api",
+        apiToken: process.env.STRAPI_API_TOKEN || "",
+        defaultLocale: process.env.STRAPI_DEFAULT_LOCALE || "en",
+      },
+    },
+    {
+      resolve: "@medusajs/medusa/caching",
+      options: {
+        providers: [
+          {
+            resolve: "@medusajs/caching-redis",
+            id: "caching-redis",
+            options: {
+              redisUrl: process.env.REDIS_URL,
+            },
+          },
+        ],
+      },
+    },
+  ],
+  featureFlags: {
+    caching: true,
+  },
 })
