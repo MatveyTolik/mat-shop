@@ -1,0 +1,29 @@
+{
+  "common": {
+    "add_to_cart": "Add to cart",
+    "checkout": "Checkout",
+    "cart": "Cart",
+    "search": "Search",
+    "account": "Account",
+    "products": "Products"
+  },
+  "header": {
+    "home": "Home",
+    "shop": "Shop",
+    "cart": "Cart",
+    "account": "Account"
+  },
+  "product": {
+    "add_to_cart": "Add to cart",
+    "price": "Price"
+  },
+  "pages" : {
+    "all_products": "All products"
+  },
+  "filter" : {
+    "sort_by": "Sort by",
+    "latest_arrivals": "Latest Arrivals",
+    "low_high": "Price: Low -> High",
+    "high_low": "Price: High -> Low"
+  }
+}
