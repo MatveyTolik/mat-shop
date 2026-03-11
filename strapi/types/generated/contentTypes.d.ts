@@ -494,7 +494,7 @@ export interface ApiMainNavigationMenuMainNavigationMenu
   extends Struct.SingleTypeSchema {
   collectionName: 'main_navigation_menus';
   info: {
-    displayName: 'Main navigation menu';
+    displayName: '\u041C\u0435\u043D\u044E: \u0413\u043E\u043B\u043E\u0432\u043D\u0430 \u043D\u0430\u0432\u0456\u0433\u0430\u0446\u0456\u044F ';
     pluralName: 'main-navigation-menus';
     singularName: 'main-navigation-menu';
   };

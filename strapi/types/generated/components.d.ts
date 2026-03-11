@@ -3,7 +3,7 @@ import type { Schema, Struct } from '@strapi/strapi';
 export interface MenuMenuItem extends Struct.ComponentSchema {
   collectionName: 'components_menu_menu_items';
   info: {
-    displayName: 'Menu item';
+    displayName: '\u041F\u0443\u043D\u043A\u0442\u0438 \u043C\u0435\u043D\u044E ';
     icon: 'bulletList';
   };
   attributes: {
