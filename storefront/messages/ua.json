@@ -1,0 +1,29 @@
+{
+  "common": {
+    "add_to_cart": "Додати в кошик",
+    "checkout": "Оформити замовлення",
+    "cart": "Кошик",
+    "search": "Пошук",
+    "account": "Акаунт",
+    "products": "Товари"
+  },
+  "header": {
+    "home": "Головна",
+    "shop": "Магазин",
+    "cart": "Кошик",
+    "account": "Акаунт"
+  },
+  "product": {
+    "add_to_cart": "Додати в кошик",
+    "price": "Ціна"
+  },
+  "pages" : {
+    "all_products": "Всі продукти"
+  },
+  "filter" : {
+    "sort_by": "Сортувати по:",
+    "latest_arrivals": "Останні",
+    "low_high": "Ціна: Низька -> Висока",
+    "high_low": "Ціна: Висока -> Низька"
+  }
+}
